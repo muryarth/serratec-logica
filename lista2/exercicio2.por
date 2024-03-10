@@ -40,19 +40,19 @@ programa
 		// se(angulo[0] + angulo[1] + angulo[2] == 180){ // Para um triângulo ser considerado válido, a soma de seus lados deve ser igual a 180 graus
 			se(angulo[0] == angulo[1] ou angulo[1] == angulo[2] ou angulo[0] == angulo[2]){ // Testa se tem pelo menos dois ângulos iguais
 				se(angulo[0] == angulo[2]){ // Se o angulo 0 é igual ao angulo 1, e o angulo 0 é igual ao angulo 2, então o triângulo é *equilátero
-					escreva("O triângulo é equilátero")
+					escreva("\nO triângulo é equilátero")
 				} senao { // Se o angulo 0 é igual ao angulo 1, mas não é igual ao ângulo 2, então é o triângulo é *isósceles
 					se(angulo[0] == 90 ou angulo[1] == 90 ou angulo[2] == 90){ // Nesse caso especial, o triângulo pode ser retângulo e isósceles
-						escreva("O triângulo é retângulo e isósceles")
+						escreva("\nO triângulo é retângulo e isósceles")
 					} senao { // Caso contrário, só é isósceles
-						escreva("O triângulo é isósceles")
+						escreva("\nO triângulo é isósceles")
 					}
 				}
 			} senao { // Caso em que o triângulo tem ângulos totalmente diferentes
 				se(angulo[0] == 90 ou angulo[1] == 90 ou angulo[2] == 90){
-					escreva("O triângulo é retângulo") // Nesse caso especial, se qualquer um dos ângulos for de 90 graus, o triângulo é *retângulo
+					escreva("\nO triângulo é retângulo") // Nesse caso especial, se qualquer um dos ângulos for de 90 graus, o triângulo é *retângulo
 				} senao {
-					escreva("O triângulo é escaleno") // Caso não seja retângulo, e todos os ângulos sejam diferentes, o triângulo é *escaleno
+					escreva("\nO triângulo é escaleno") // Caso não seja retângulo, e todos os ângulos sejam diferentes, o triângulo é *escaleno
 				}
 			}
 		// } senao {
@@ -66,7 +66,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2452; 
+ * @POSICAO-CURSOR = 1913; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
