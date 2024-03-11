@@ -19,9 +19,6 @@ programa
 		se(totalDigitos % 2 == 1){ termoDoMeio = (totalDigitos + 1) / 2 } 
 		senao { termoDoMeio = totalDigitos / 2}
 		
-		logico eUmPalindromo = verdadeiro
-		n = numero // Reseta o valor do número auxiliar
-
 		// Uso de índices
 		// 1 2 3 2 1 -> Dígitos
 		// 4 3 2 1 0 -> Índices
@@ -29,6 +26,9 @@ programa
 		 *  Optei por fazer com que o último dígito do número seja o de índice 0,
 		 *  por isso, percorremos o número de trás para frente nesse caso
 		*/
+
+		logico eUmPalindromo = verdadeiro
+		n = numero // Reseta o valor do número auxiliar
 		
 		// Verifica cada dígito do número individualmente, até o termo do meio
 		faca{ 
@@ -42,7 +42,7 @@ programa
 
 				// Verifica se é um palindromo
 				se(indiceUltimoDigitoPercorrido == indiceDaComparacao 
-					e digitoAtual != digitoComparado){ eUmPalindromo = falso }
+					e digitoAtual != digitoComparado){ eUmPalindromo = falso } // Como a variável "eUmPalindromo" já foi inicializada como verdadeira, só precisamos mudar seu valor para falso uma única vez
 				
 				// Troca o dígito que está sendo COMPARADO
 				se(k % 10 != 0){ k = k - k % 10 } // Desconta o resto se for ímpar
@@ -68,7 +68,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 275; 
+ * @POSICAO-CURSOR = 1809; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {totalDigitos, 5, 31, 12}-{contador, 5, 49, 8}-{n, 9, 10, 1}-{indiceUltimoDigitoPercorrido, 35, 11, 28}-{indiceDaComparacao, 36, 11, 18}-{k, 37, 11, 1}-{digitoAtual, 38, 11, 11}-{digitoComparado, 41, 12, 15};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
