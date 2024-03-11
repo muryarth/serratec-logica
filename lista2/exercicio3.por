@@ -14,7 +14,7 @@ programa
 {
 	funcao inicio()
 	{
-		caracter letra
+		caracter letra = 'a'
 
 		escreva("\nInforme uma letra: ")
 		leia(letra)
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 426; 
+ * @POSICAO-CURSOR = 312; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
