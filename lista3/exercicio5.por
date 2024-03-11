@@ -49,7 +49,7 @@ programa
 				k = k / 10 // Descarta o último dígito do número, porque já foi usado
 				indiceUltimoDigitoPercorrido++ // Troca o índice do dígito que está sendo COMPARADO
 				
-			} enquanto(indiceUltimoDigitoPercorrido <= indiceDaComparacao e k > 0) // Vai até o último dígito, ou até acabar a divisão
+			} enquanto(indiceUltimoDigitoPercorrido <= indiceDaComparacao e k > 0) // Vai até o último dígito, ou até acabar a divisão do número
 
 			// Troca o dígito que está sendo VERIFICADO
 			se(n % 10 != 0){ n = n - n % 10 } // Desconta o resto se for ímpar
@@ -68,7 +68,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1809; 
+ * @POSICAO-CURSOR = 40; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {totalDigitos, 5, 31, 12}-{contador, 5, 49, 8}-{n, 9, 10, 1}-{indiceUltimoDigitoPercorrido, 35, 11, 28}-{indiceDaComparacao, 36, 11, 18}-{k, 37, 11, 1}-{digitoAtual, 38, 11, 11}-{digitoComparado, 41, 12, 15};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
