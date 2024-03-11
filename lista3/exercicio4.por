@@ -46,25 +46,27 @@
 programa {          
 	funcao inicio()
 	{
-		inteiro tamanho, quantLinhas, apagaAsteriscosEsquerda = 0
+		inteiro tamanho, quantLinhas, quantAsteriscosApagadosLinha = 0
 
-		escreva("\nEscreva um número par, maior do que zero: ")
+		escreva("\nQual o tamanho da sua pirâmide? ") // Tamanho da base da pirâmide
 		leia(tamanho)
 
+		// Calcula a quantidade de linhas por pirâmide, baseado no tamanho inserido
 		se(tamanho % 2 == 1){ // Se o número inserido for ímpar
 			quantLinhas = (tamanho + 1) / 2 + 1
 		} senao { // Se o número inserido for par
 			quantLinhas = tamanho / 2 + 1
 		}
 
-		para(inteiro i = 0; i < quantLinhas; i++){
-			inteiro apagador = apagaAsteriscosEsquerda
+		para(inteiro i = 0; i < quantLinhas; i++){ // Percorre cada "linha" da pirâmide
+			inteiro apagaAsterisco = quantAsteriscosApagadosLinha // Variável usada para controlar quantos asteriscos vão ser apagados, no segundo "para"
+			// Usei essa variável porque não quero que o "quantAsteriscosApagadosLinha" seja alterado dentro do segundo "para"
 			
-			para(inteiro j = 0; j < tamanho - apagaAsteriscosEsquerda; j++){
+			para(inteiro j = 0; j < tamanho - quantAsteriscosApagadosLinha; j++){ // Percorre cada "coluna" da pirâmide
 				se(i > 1){ // Começa a apagar os asteriscos a partir da linha 2 (que é a terceira linha)
-					se(apagador > 0){
+					se(apagaAsterisco > 0){
 						escreva("   ")
-						apagador--
+						apagaAsterisco--
 					} senao {
 						escreva(" * ")
 					}
@@ -74,7 +76,7 @@ programa {
 			}
 			
 			// Aumenta a quantidade de asteriscos que vai apagar à esquerda, a cada loop do primeiro "para"
-			se(i > 0){ apagaAsteriscosEsquerda = apagaAsteriscosEsquerda + 1 }
+			se(i > 0){ quantAsteriscosApagadosLinha = quantAsteriscosApagadosLinha + 1 }
 			escreva("\n")
 		}
 	} 
@@ -85,9 +87,9 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1326; 
+ * @POSICAO-CURSOR = 1537; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {apagaAsteriscosEsquerda, 49, 32, 23}-{apagador, 61, 11, 8};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
