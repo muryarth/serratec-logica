@@ -68,9 +68,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 40; 
+ * @POSICAO-CURSOR = 275; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {totalDigitos, 5, 31, 12}-{contador, 5, 49, 8}-{n, 9, 10, 1}-{indiceUltimoDigitoPercorrido, 35, 11, 28}-{indiceDaComparacao, 36, 11, 18}-{k, 37, 11, 1}-{digitoAtual, 38, 11, 11}-{digitoComparado, 41, 12, 15};
+ * @SIMBOLOS-INSPECIONADOS = {totalDigitos, 5, 31, 12}-{contador, 5, 49, 8}-{n, 9, 10, 1}-{indiceUltimoDigitoPercorrido, 42, 11, 28}-{indiceDaComparacao, 43, 11, 18}-{k, 44, 11, 1}-{digitoAtual, 45, 11, 11}-{digitoComparado, 48, 12, 15};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

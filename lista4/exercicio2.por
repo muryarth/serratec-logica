@@ -1,25 +1,22 @@
 programa
-{
+	{
 	funcao inicio()
 	{
-		inteiro base
-		inteiro expoente
+		inteiro ano
 
-		escreva("Informe uma base: ")
-		leia(base)
+		escreva("Informe um ano: ")
+		leia(ano)
 
-		escreva("Informe um expoente: ")
-		leia(expoente)
-
-		escreva(CalculaExponecial(base, expoente))
+		se(VerificaBissexto(ano)){
+			escreva("\nO ano " + ano + " é bissexto")
+		} senao {
+			escreva("\nO ano " + ano + " não é bissexto")
+		}
+		
 	}
 
-	funcao inteiro CalculaExponecial(inteiro base, inteiro expoente){
-		se(expoente <= 1){
-			retorne base
-		} senao {
-			retorne base * CalculaExponecial(base, expoente - 1)
-		}
+	funcao logico VerificaBissexto(inteiro ano){
+		retorne ano % 4 == 0
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 47; 
+ * @POSICAO-CURSOR = 196; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
