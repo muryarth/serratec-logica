@@ -24,7 +24,7 @@ programa
 	// Solução sem recursividade
 	// digito = numero % 10
 	// numero = numero / 10
-	// soma = soma + digito
+	// soma = soma + 1
 
 	// Solução por recursividade
 	// Entrada: 100
@@ -34,12 +34,26 @@ programa
 
 	funcao inteiro retornaQuantidadeDigitos(inteiro numero){ // 100
 		escreva("\n" + numero)
-		
-		se (numero > 1) {
-			retorne 1 + retornaQuantidadeDigitos(numero / 10)
-		} senao { // Quando número é 0
+
+		// 213
+		// 213 / 10
+		// 21
+		// 2 -> se (numero > 2)
+		// 0
+
+		// Para casos em que a entrada contém vários zeros agrupados
+		// "000" é considerado como um número de um único dígito
+	
+		se (numero == 0) { // Quando inicia-se com zero
 			retorne 1
-		}
+		} senao { // Quando número é 0
+			inteiro n = numero / 10
+			se(n > 0) { // Quando a divisão é maior do que zero
+				retorne 1 + retornaQuantidadeDigitos(n)
+			} senao { // Caso específico em que o zero ocorre durante a divisão
+				retorne 0 + retornaQuantidadeDigitos(n)
+			}
+		} 
 	}
 }
 
@@ -54,7 +68,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 895; 
+ * @POSICAO-CURSOR = 763; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
