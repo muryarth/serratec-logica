@@ -8,6 +8,7 @@ programa
 		inteiro matrizB[TAMANHO_MATRIZ][TAMANHO_MATRIZ]
 
 		// Le os valores de cada linha e cada coluna da matriz A
+		escreva("\nLendo valores para Matriz A:\n")
 		para(inteiro linha = 0; linha < TAMANHO_MATRIZ; linha++){
 			para(inteiro coluna = 0; coluna < TAMANHO_MATRIZ; coluna++){
 				escreva("Informe o valor de linha " + linha + " e coluna " + coluna + ": ")
@@ -16,6 +17,7 @@ programa
 		}
 
 		// Le os valores de cada linha e cada coluna da matriz B
+		escreva("\nLendo valores para Matriz B:\n")
 		para(inteiro linha = 0; linha < TAMANHO_MATRIZ; linha++){
 			para(inteiro coluna = 0; coluna < TAMANHO_MATRIZ; coluna++){
 				escreva("Informe o valor de linha " + linha + " e coluna " + coluna + ": ")
@@ -68,9 +70,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 551; 
+ * @POSICAO-CURSOR = 289; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {matrizResultado, 37, 10, 15}-{linhaMatriz1, 40, 15, 12};
+ * @SIMBOLOS-INSPECIONADOS = {matrizResultado, 39, 10, 15}-{linhaMatriz1, 42, 15, 12};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
