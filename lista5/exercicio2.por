@@ -7,7 +7,7 @@ programa
 {
 	funcao inicio()
 	{
-		const inteiro TAMANHO_MAX_VETOR = 5
+		const inteiro TAMANHO_MAX_VETOR = 100
 		inteiro indiceElementoAtual = 0
 		real vetor[TAMANHO_MAX_VETOR]
 		real soma = 0.0
@@ -42,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 283; 
+ * @POSICAO-CURSOR = 257; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
