@@ -1,6 +1,6 @@
 programa
 {
-	const inteiro TAMANHO_MATRIZ = 2 // Variável global
+	const inteiro TAMANHO_MATRIZ = 3 // Variável global
 	
 	funcao inicio()
 	{
@@ -35,24 +35,24 @@ programa
 	// Faz a multiplicação entre matrizes
 	funcao vazio MultiplicaMatrizes(inteiro matrizA[][], inteiro matrizB[][]){
 		inteiro matrizResultado[TAMANHO_MATRIZ][TAMANHO_MATRIZ]
-		
+
+		// Faz a varredura das matrizes multiplicando os elementos seguindo as regras da multiplicação de matrizes
 		para(inteiro linhaMatriz1 = 0; linhaMatriz1 < TAMANHO_MATRIZ; linhaMatriz1++){
-			para(inteiro colunaMatriz2 = 0; colunaMatriz2 < TAMANHO_MATRIZ; colunaMatriz2++){ // Isso resolve o problema
+			para(inteiro colunaMatriz2 = 0; colunaMatriz2 < TAMANHO_MATRIZ; colunaMatriz2++){
 				inteiro somaColuna = 0
-				// Percorre por coluna da Matriz2, e compara os índices
 				para(inteiro colunaMatriz1 = 0; colunaMatriz1 < TAMANHO_MATRIZ; colunaMatriz1++){
-					inteiro produto = matrizA[linhaMatriz1][colunaMatriz1] * matrizB[colunaMatriz1][linhaMatriz1]
+					inteiro produto = matrizA[linhaMatriz1][colunaMatriz1] * matrizB[colunaMatriz1][colunaMatriz2]
 					somaColuna = somaColuna + produto
 				}
-				matrizResultado[linhaMatriz1][colunaMatriz2] = somaColuna
+				matrizResultado[linhaMatriz1][colunaMatriz2] = somaColuna // Armazena o resultado do produto em um elemento de uma nova matriz
 			}
 		}
 
 		escreva("\nMatriz de resultado: ")
-		ImprimeMatrizGenerica(matrizResultado)
+		ImprimeMatrizGenerica(matrizResultado) // Usa a função pra imprimir uma matriz seguindo a formatação padrão de matrizes
 	}
 
-	// Mostra qualquer matriz no terminal
+	// Mostra uma matriz formatada no terminal
 	funcao vazio ImprimeMatrizGenerica(inteiro matriz[][]){
 		escreva("\n")
 		para(inteiro linha = 0; linha < TAMANHO_MATRIZ; linha++){
@@ -68,9 +68,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1709; 
+ * @POSICAO-CURSOR = 551; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {matrizResultado, 37, 10, 15}-{linhaMatriz1, 39, 15, 12};
+ * @SIMBOLOS-INSPECIONADOS = {matrizResultado, 37, 10, 15}-{linhaMatriz1, 40, 15, 12};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
